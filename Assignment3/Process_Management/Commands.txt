@@ -1,0 +1,13 @@
+# Basic Commands :-
+
+ps - View running processes.
+top or htop - Monitor system processes in real-time.
+kill - Terminate a process using its PID.
+jobs - List active background jobs.
+fg and bg - Move jobs between foreground and background.
+
+# Advanced Tasks :-
+
+nice and renice - Adjust process priorities.
+strace - Trace system calls of a process.
+lsof - List open files for a process.

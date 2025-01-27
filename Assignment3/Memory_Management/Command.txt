@@ -1,0 +1,12 @@
+# Basic Commands :-
+
+free - Display system memory usage.
+vmstat - Report memory, CPU, and I/O statistics.
+uptime - Show system uptime and load average.
+dmesg - Kernel ring buffer messages, including memory-related logs.
+
+# Advanced Tasks :-
+
+cat /proc/meminfo - View detailed memory information.
+cat /proc/<PID>/status - Inspect memory usage of a specific process.
+watch free -h - Continuously monitor memory usage.
