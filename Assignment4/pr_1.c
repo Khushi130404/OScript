@@ -62,3 +62,12 @@ int main()
 // PID: 68308
 // Child Process Created (PID: 62164)
 // The program 'D:\OScript\Assignment4\pr_1.exe' has exited with code 0 (0x00000000).
+
+
+// [Running] cd "d:\OScript\Assignment4\" && gcc pr_1.c -o pr_1 && "d:\OScript\Assignment4\"pr_1
+// Child Process Running
+// Parent Process:
+// PID: 24500
+// Child Process Created (PID: 49416)
+
+// [Done] exited with code=0 in 3.093 seconds
