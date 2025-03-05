@@ -21,7 +21,7 @@ class ResourceManager3
             synchronized (this) 
             {
                 availableResources -= count;
-                System.out.println(Thread.currentThread().getName() + " allocated " + count + " resources, Remaining: " + availableResources);
+                System.out.println(Thread.currentThread().getName() + " allocated " + count + " resources, Remaining: " + getAvailableResources());
             }
         } 
         catch (InterruptedException e) 
@@ -35,9 +35,14 @@ class ResourceManager3
         synchronized (this) 
         {
             availableResources += count;
-            System.out.println(Thread.currentThread().getName() + " released " + count + " resources, Remaining: " + availableResources);
+            System.out.println(Thread.currentThread().getName() + " released " + count + " resources, Remaining: " + getAvailableResources());
         }
         semaphore.release(count);
+    }
+    
+    public int getAvailableResources() 
+    {
+        return availableResources;
     }
 }
 
@@ -57,38 +62,44 @@ class Process3 extends Thread
     {
         manager.decreaseCount(request);
 
-        try {
-            Thread.sleep(1000); // Simulate process execution
-        } catch (InterruptedException e) {}
+        try 
+        {
+            Thread.sleep(1000); 
+        } 
+        catch (InterruptedException e) 
+        {
+        	e.printStackTrace();
+        }
 
         manager.increaseCount(request);
     }
 }
 
-public class SemaphoreDemo {
-    public static void main(String[] args) {
-        ResourceManager manager = new ResourceManager();
-        Thread t1 = new Process(manager, 3);
-        Thread t2 = new Process(manager, 4);
+public class RaceCondition3 
+{
+    public static void main(String[] args) 
+    {
+        ResourceManager3 manager = new ResourceManager3();
+        Thread t1 = new Process3(manager, 3);
+        Thread t2 = new Process3(manager, 4);
+        Thread t3 = new Process3(manager, 2);
 
         t1.start();
         t2.start();
+        t3.start();
 
-        try {
+        try 
+        {
             t1.join();
             t2.join();
-        } catch (InterruptedException e) {}
+            t3.join();
+        } 
+        catch (InterruptedException e) 
+        {
+        	e.printStackTrace();
+        }
 
-        System.out.println("Final available resources: " + manager.availableResources);
+        System.out.println("Final available resources: " + manager.getAvailableResources());
     }
 }
 
-
-public class RaceCondition3 {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
-
-}
