@@ -18,7 +18,8 @@ public class RowChecker implements Runnable
     {
         for (int i = 0; i < sudoku.length; i++) 
         {
-            if (!Validate.isValidSet(sudoku[i])) {
+            if (!Validate.isValidSet(sudoku[i])) 
+            {
                 results[index] = false;
                 return;
             }
