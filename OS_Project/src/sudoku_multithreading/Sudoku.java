@@ -43,7 +43,7 @@ public class Sudoku
         while (!executor.isTerminated()) 
         {
         	// wait
-        	// Eat 5-star, Do nothing 😎
+        	// Eat 5-Star, Do nothing 😎
         }
 
         
