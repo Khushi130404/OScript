@@ -42,7 +42,7 @@ public class IPC1
                 
                 ProcessBuilder processBuilder = new ProcessBuilder(command); // Fork
                 processBuilder.inheritIO(); 
-                Process process = processBuilder.start(); // Exec
+                Process process = processBuilder.start();
                 process.waitFor(); // Wait
 
             } 
