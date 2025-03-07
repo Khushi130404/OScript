@@ -58,7 +58,8 @@ int main(void)
             }
         }
         else
-        { // Parent process
+        { 
+            // Parent process
             waitpid(pid, NULL, 0);
         }
     }
