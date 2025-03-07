@@ -40,10 +40,10 @@ public class IPC1
                 }
 
                 
-                ProcessBuilder processBuilder = new ProcessBuilder(command);
-                processBuilder.inheritIO();
-                Process process = processBuilder.start();
-                process.waitFor();
+                ProcessBuilder processBuilder = new ProcessBuilder(command); // Fork
+                processBuilder.inheritIO(); 
+                Process process = processBuilder.start(); // Exec
+                process.waitFor(); // Wait
 
             } 
             catch (IOException | InterruptedException e) 
