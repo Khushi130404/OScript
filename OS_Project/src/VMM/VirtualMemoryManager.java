@@ -144,7 +144,8 @@ class VirtualMemoryManager
         {
             System.err.println(e.getMessage());
         } 
-        catch (IOException e) {
+        catch (IOException e) 
+        {
             System.err.println("I/O Error: " + e.getMessage());
         }
     }
