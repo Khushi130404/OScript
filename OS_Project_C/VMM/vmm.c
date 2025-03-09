@@ -61,7 +61,6 @@ int handlePageFault(int pageNumber, FILE *backingStore)
         fprintf(stderr, "I/O Error: Error reading page %d from BACKING_STORE.bin\n", pageNumber);
         exit(EXIT_FAILURE);
     }
-
     pageTable[pageNumber] = nextFreeFrame;
     return nextFreeFrame++;
 }
@@ -83,7 +82,6 @@ int getPhysicalAddress(int logicalAddress, FILE *backingStore)
         }
         updateTLB(pageNumber, frameNumber);
     }
-
     return (frameNumber * FRAME_SIZE) + offset;
 }
 
