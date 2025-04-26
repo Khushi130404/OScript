@@ -9,19 +9,23 @@ int main()
   
   if(pid<0)
   {
-    printf("\nFailure");
+    printf("Process Failed");
+    perror("Failed");
     return 1;
   }
   else if(pid==0)
   {
-    printf("\nThis is Child Process : %d",getpid());
-    printf("\nMy Parent Process : %d",getppid());
+    printf("\nThis is Child Process : %d\n",getpid());
+    fflush(stdout); 
+    execlp("/bin/ls","ls","-l",NULL);
+    printf("execlp Failed");
+    perror("Space Failed");
+    return 1;
   }
   else
   {
     wait(NULL);
     printf("\nThis is Parent Process : %d",getpid());
-    printf("\nMy Child Process : %d",pid);
   }
   
   return 0;
