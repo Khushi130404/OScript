@@ -22,3 +22,18 @@ elif [ "$op" = "/" ]; then
 else
     echo "Invalid Operator"
 fi
+
+
+# echo -n "Enter Number 1 : "
+# read n1
+# echo -n "Enter Number 2 : "
+# read n2
+# echo -n "Enter op : "
+# read op
+# case $op in
+#     "+") echo "Add : $((n1+n2))";;
+#     "-") echo "Sub : $((n1-n2))";;
+#     "*") echo "Mult : $((n1*n2))";;
+#     "/") echo "Div : $((n1/n2))";;
+#     *) echo "Invalid";;
+# esac
