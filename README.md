@@ -1,68 +1,105 @@
-# OScript Project
+# 🚀 OScript
 
-This repository contains the OScript project, which is designed to [add a brief description of the project's purpose or functionality here].
+OScript is a repository containing Operating System assignments and projects. It includes coding solutions in multiple languages and provides a structured way to explore OS concepts practically.
 
-## File Structure
+## 📂 Repository Contents
 
-The following is a detailed file structure of the project:
+### 📜 1. Assignments
+- The repository includes given assignments in PDF format.
+- Assignments cover topics such as:
+  - 🖥️ Shell scripting
+  - 🔄 Process management
+  - 🧠 Memory management
+  - 🖨️ Input/Output operations
+  - 📁 File system management
+  - ⏳ Process scheduling
+  
+### 📝 2. Programming Solutions
+- The assignments include code implementations in the following languages:
+  - 🐚 **Shell Scripting**
+  - 🔵 **C**
+  - 🔶 **C++**
+  - ☕ **Java**
+- The scripts and programs demonstrate OS-related concepts, including process creation, synchronization, inter-process communication, and scheduling.
+
+### 📊 3. Project
+- A separate PDF includes a project with 5 key questions:
+  - 🔁 Process Synchronization
+  - 🔓 Deadlocks
+  - 🧵 Multithreading
+  - 📡 Inter-Process Communication (IPC)
+  - 💾 Virtual Memory and Paging
+
+## 📂 Directory Structure
 
 ```
 OScript/
-├── Assignment-1/       # Files related to Assignment 1
-├── Assignment-2/       # Files related to Assignment 2
-├── Assignment-3/       # Shell scripting assignments
-│   ├── Advance_Shell/
-│   ├── File_Management/
-│   ├── IO_Management/
-│   ├── Memory_Management/
-│   ├── Process_Management/
-│   └── System_Monitoring/
-├── Assignment-4/       # Process Management in C
-├── OS_Project/        # Java Implementation
-│   └── src/
-│       ├── VMM/       # Virtual Memory Manager
-│       │   ├── VirtualMemoryManager.java    # Main VMM implementation
-│       │   ├── PageTable.java               # Page table management
-│       │   ├── TLB.java                    # Translation Lookaside Buffer
-│       │   └── MemoryManager.java          # Physical memory management
-│       ├── race_condition/  # Race Condition Examples
-│       │   ├── RaceCondition2.java         # Basic race condition demo
-│       │   ├── RaceCondition4.java         # Lock-based solution
-│       │   └── ResourceManager.java        # Resource management implementations
-│       ├── IPC/       # Inter-Process Communication
-│       │   ├── SharedMemory/               # Shared Memory Implementation
-│       │   └── MessageQueue/               # Message Queue Implementation
-│       ├── Bank/      # Banking System Demo
-│       │   ├── Account.java                # Account Management
-│       │   └── Transaction.java            # Transaction Processing
-│       ├── Sudoku_Multithreading/  # Multithreaded Sudoku Solver
-│       │   ├── SudokuSolver.java           # Main Solver Implementation
-│       │   └── ThreadPool.java             # Thread Pool Management
-│       ├── utils/     # Utility classes
-│       └── test/      # Test cases
-├── OS_Project_C/      # C Implementation
-├── Questions/         # Assignment questions
-└── Submission/        # Submission files
+├── Assignment1/       # 📜 Files related to Assignment 1
+│   ├── pr_1.sh        # Script 1
+│   ├── pr_2.sh        # Script 2
+│   ├── pr_3.sh        # Script 3
+│   ├── pr_4.sh        # Script 4
+│   ├── pr_5.sh        # Script 5
+│   ├── pr_6.sh        # Script 6
+│   ├── pr_7.sh        # Script 7
+│   ├── pr_8.sh        # Script 8
+│   ├── pr_9.sh        # Script 9
+│   └── pr_10.sh       # Create Backup Script
+├── Assignment2/       # 📜 Files related to Assignment 2
+│   ├── pr_1.sh
+│   ├── pr_2.sh
+│   ├── pr_3.sh
+│   ├── pr_4.sh
+│   ├── pr_5.sh
+│   ├── pr_6.sh
+│   ├── pr_7.sh
+│   ├── pr_8.sh
+│   ├── pr_9.sh        # Display Name of files with less than 10% free space
+│   ├── pr_10.sh
+│   ├── pr_11.sh
+│   ├── pr_12.sh
+│   ├── pr_13.sh       # Count total lines in a file
+│   ├── pr_14.sh
+│   └── pr_15.sh
+├── Assignment-3/  
+│   ├── Advance_Shell/ 🔹 Advanced Shell Scripting
+│   ├── File_Management/ 📁 File System Operations
+│   ├── IO_Management/ 🖨️ I/O Management
+│   ├── Memory_Management/ 🧠 Memory Analysis
+│   ├── Process_Management/ 🔄 Process Handling
+│   └── System_Monitoring/ 📊 System Performance
+├── Assignment-4/
+│   ├── pr_1.c            # Assignment 4 Program 1
+│   ├── pr_2.c            # Assignment 4 Program 2
+│   ├── pr_3.c            # Assignment 4 Program 3
+│   ├── pr_child_4.c      # Assignment 4 Child Process Program
+│   └── pr_child_4.exe
+├── OS_Project/        # ☕ Java Implementation
+│   ├── VMM/           # 💾 Virtual Memory Manager
+│   ├── race_condition/  # 🔓 Race Condition Examples
+│   ├── IPC/            # 📡 Inter-Process Communication
+│   ├── Bank/           # 🏦 Banking System Demo
+│   ├── Sudoku_Multithreading/  # 🧩 Sudoku Solver
+│   ├── utils/          # 🔧 Utility Classes
+│   └── test/           # 🛠️ Test Cases
+├── OS_Project_C/      # 🔵 C Implementation
+│   ├── IPC/           # 📡 IPC Implementations
+│   ├── Race_Condition/ # 🔓 Race Condition Examples
+│   └── VMM/           # 💾 Virtual Memory Manager
+├── Questions/         # ❓ Assignment & Project Questions
+│   ├── Assignment_Questions.pdf   # 📜 Assignment Questions
+│   └── OS_Project_Questions.pdf   # 📜 OS Project Questions
+├── Submission/        # ✅ Submission Files
+│   ├── CaseStudy.docx
+│   ├── Submission1.docx
+│   ├── Submission2.docx
+│   ├── Submission3.docx
+│   └── Submission4.docx
+└── README.md          # 📖 Documentation
 ```
 
-## Getting Started
-
-1. Clone the repository:
-   ```bash
-   git clone <repository-url>
-   cd OScript
-   ```
-
-2. Navigate to the desired folder and execute the relevant scripts.
-
-## Contributing
-
-Contributions are welcome! Please follow these steps:
-
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix.
-3. Submit a pull request with a detailed description of your changes.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
+## ⚡ How to Use
+1. **📥 Download the repository**: Clone or download this repository.
+2. **📚 Read the PDFs**: Review the assignments and project PDFs before implementing solutions.
+3. **🔍 Navigate the code**: Explore the code in respective language folders to see working solutions.
+4. **▶️ Run the programs**: Follow the instructions inside each script or code file to execute the programs.
