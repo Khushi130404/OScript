@@ -103,5 +103,3 @@ OScript/
 2. **📚 Read the PDFs**: Review the assignments and project PDFs before implementing solutions.
 3. **🔍 Navigate the code**: Explore the code in respective language folders to see working solutions.
 4. **▶️ Run the programs**: Follow the instructions inside each script or code file to execute the programs.
-
-

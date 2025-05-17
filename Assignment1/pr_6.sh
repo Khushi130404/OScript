@@ -10,3 +10,13 @@ if [ "$rev_str" == "$str" ]; then
 else    
     echo "Not a Palindrom"
 fi
+
+# echo -n "Enter String : "
+# read str
+# rv=""
+# len=${#str}
+# for(( i=$len-1; i>=0; i-- ))
+# do 
+#     rv="$rv${str:$i:1}"
+# done
+# echo "$rv"
